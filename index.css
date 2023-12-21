@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    /* background-color: cyan; */
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+.game{
+    background-color: rgb(119, 1, 1);
+    margin-top: 10%;
+    max-width:100%;
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    gap:10px; 
+    outline:2px solid black;
+    outline-offset: .5rem;
+    /* box-shadow: 1px 1px 2px 2px black; */
+    
+
+}
+.box{
+    width: 5rem;
+    height: 5rem;
+    background-color: rgb(243, 239, 224);
+    border: none;
+   font-size: 4.5rem;
+   color: black;
+}
+
+
+#reset{
+    /* padding: 1rem; */
+    background-color: black;
+    color: white;
+    border: none;
+    outline: 2px solid black;
+    outline-offset: .1rem;
+    margin-top: 3rem;
+    padding-inline: 2.5rem;
+    padding-block: .5rem;
+    font-size: 1.5rem;
+}
+
+.result{
+margin-top: 2rem;
+font-size: 2.2rem;
+font-weight: 500;
+color: rgb(210, 19, 19);
+animation-name: zoom;
+animation-duration: 2s;
+animation-timing-function: linear;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.hide{
+    display: none;
+}
